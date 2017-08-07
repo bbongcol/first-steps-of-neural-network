@@ -159,7 +159,7 @@ for e in range(epochs) :
 # 신경망 테스트
 
 # Test 용 mnist 파일 open
-with gzip.open("mnist_test.gz", 'rb') as f:
+with gzip.open("mnist_test.gz", 'r') as f:
     test_data_list = [x.decode('utf8').strip() for x in f.readlines()]
     f.close()
 
